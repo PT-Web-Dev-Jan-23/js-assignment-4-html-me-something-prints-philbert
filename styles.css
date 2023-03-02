@@ -3,3 +3,10 @@
 p {
 	font-family: "Courier";
 }
+
+div {
+	padding-top: 100px;
+	padding-right: 50%;
+	padding-bottom: 100px;
+	padding-left: 50%;
+}
