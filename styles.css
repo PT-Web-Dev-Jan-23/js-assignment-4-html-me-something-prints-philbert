@@ -9,9 +9,10 @@ p {
 }
 
 body {
-	/* display: block; */
+	display: block;
+	/* background-image: url(images/background.jpg); */
 
-	/* padding-top: 10px;
+	padding-top: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px; 
@@ -19,7 +20,20 @@ body {
 	margin-top: 8px;
 	margin-right: 8px;
 	margin-bottom: 8px;
-	margin-left: 8px; */
+	margin-left: 8px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h2 {
+	text-align: center;
+}
+
+figure {
+	text-align: center;
 }
 
 .funParagraph {
@@ -33,7 +47,17 @@ body {
 	margin-left: 25%;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+
+#footer-div {
+	margin: auto;
+	width:19%;
+	border: 2.25px solid darkslategray;
+	border-radius: 22px;
+	text-align: center;
 }
+
+#footer-p {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
