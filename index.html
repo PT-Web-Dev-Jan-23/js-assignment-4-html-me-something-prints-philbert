@@ -1,8 +1,208 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <title>&lt;p&gt;</title>
+      
+      <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+      <link rel="stylesheet" type="text/css" href="styles.css">
+
    </head>
    <body>
-      <!-- Write your HTML in this file! -->
+      
+      <script>
+         // window.addEventListener("load", function(){
+         // Get the button:
+         let mybutton = document.getElementById("myBtn");
+
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+
+         function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+               mybutton.style.display = "none";
+            }
+         }
+
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+         document.body.scrollTop = 0; // For Safari
+         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+         }
+         // } 
+      </script>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <header> <!-- Headers represent a container for introductory content or a set of navigation links -->       
+         <h1>Timeline</h1>
+               <ul class="nav">
+                  <li><a href="#2011">2011</a></li>
+                  <li><a href="#2012">2012</a></li>
+                  <li><a href="#2013">2013</a></li>
+                  <li><a href="#2014">2014</a></li>
+                  <li><a href="#2015">2015</a></li>
+                  <li><a href="#2016">2016</a></li>
+                  <li><a href="#2017">2017</a></li>
+                  <li><a href="#2018">2018</a></li>
+                  <li><a href="#2019">2019</a></li>
+                  <li><a href="#2020">2020</a></li>
+                  <li><a href="#2021">2021</a></li>
+                  <li><a href="#2022">2022</a></li>
+                  <li><a href="#2023">2023</a></li>
+               </ul>
+         </header>
+
+      <main>
+
+         <section>
+            <h1 id="mainHeading">See me, know me</h1> <!-- specifies the main content of a document -->
+            <p class="centered" id="intro">My photographic journey</p>
+            <hr>
+         </section>
+
+         <article>          <!-- Article specifies independent, self-contained content -->
+
+            <section id="beginning">
+               <a name="2011"></a> 
+               <h2>In the Beginning</h2>
+               <div id="div-2011">
+                  <p>"Follow your heart and you may find your so(u)l."</p>
+               </div>
+               <figure class="right">
+                  <img src="images/origin.jpg">
+               </figure>
+            </section>
+            <hr>
+
+            <section>
+               <a name="2012"></a>
+               <h2>The Sun Also Rises</h2>
+               <p>"Saved by the Sol Brothers"</p>
+               <figure class="left bordered">
+                  <img src="https://64.media.tumblr.com/tumblr_ma2ewsqEAT1r1n7d8o1_500.jpg">
+               </figure>
+            </section>
+            <hr>
+
+            <section>
+               <a name="2013"></a>
+               <h2>SEA to STL</h2>
+               <p>Recalibration (1st year with the Instax mini/dedicated camera for self portraits)</p>
+               <figure>
+                  <img src="https://64.media.tumblr.com/bc919db8953902ea565197e4eb39e373/tumblr_mwtl07wLvM1r1n7d8o1_500.jpg">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2014"></a>
+               <h2>Philly Madison: Back to School and a Journey to the Philippines</h2>
+               <p>This year I returned to college to finish my degree after 5 years and took two trips to the Philippines. I also finally bought a digital camera</p>
+               <figure>
+                  <img src="">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2015"></a>
+               <h2>The Discovery of Digital Photography and my Initiation into Art Realm</h2>
+               <p>This is the year that I enrolled in community college and began taking as many art classes as I could, including my first class in Digital Photography. This is also the year (after four years of failure) that I successfully made a self portrait in a different outfit in a different location everyday.</p>
+               <figure>
+                  <div class="video-div" id="as-seen-by">
+                     <iframe src="https://player.vimeo.com/video/148930431?h=ffca3dbec3" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                     <p><a href="https://vimeo.com/148930431">as seen by philipadilla</a> from <a href="https://vimeo.com/seennoevil">seen no evil</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  </div>
+               </figure>
+            </section>
+
+            <section>
+               <a name="2016"></a>
+               <h2>Seen No Evil or: How I Learned to Relax and Embrace my P-ness</h2>
+               <p>Continuing my art education I embarked on a journey of self-discovery and investigation of my identity, masculinity, and my body.</p>
+               <figure>
+                  <img src="">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2017"></a>
+               <h2>Plato's Portrait and the Beginning of the HeartWork Era</h2>
+               <p id="testP" class="funParagraph">I found roller derby, fell in love, and all I wanted to do was rollerskate~</p>
+               <figure>
+                  <img src="https://64.media.tumblr.com/f25ad4d3557c9869d4d81c6cd316915d/tumblr_os50s6vWbA1r1n7d8o1_500.jpg">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2018"></a>
+               <h2>K & P Year One</h2>
+               <p>Art partners</p>
+               <figure>
+                  <img src="images/IMG_1567 copy.jpg">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2019"></a>
+               <h2>How to Make a Heartwork</h2> <!-- https://mail.hover.com/u/philip@philipadilla.com/How%20to%20Make%20a%20Heartwork/How_to_Make_a_Heartwork_Video.mp4 
+                  https://www.dropbox.com/s/a8ftgwdba0ee2z6/CalfeePadilla_HowtoMakeaHeartWork.mov?dl=0 -->
+               <p>This is a video we made about our art, our relationship, and our relationship to art.</p>
+               <figure>
+                   <div class="video-div" id="heartwork">
+                     <video width="320" height="240" allowfullscreen controls>
+                        <source src="https://mail.hover.com/u/philip@philipadilla.com/How%20to%20Make%20a%20Heartwork/How_to_Make_a_Heartwork_Video.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                     </video>
+                  </div> 
+               </figure>
+            </section>
+
+            <section>
+               <a name="2020"></a>
+               <h2>K & P Year One</h2>
+               <p>Art partners</p>
+               <figure>
+                  <img src="">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2021"></a>
+               <h2>Johnny Appleseen</h2>
+               <p>The year I spent in the trees</p>
+               <figure>
+                  <img src="">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2022"></a>
+               <h2>Adulting is Hard</h2>
+               <p>Decided to pursue a career outside of art.</p>
+               <figure>
+                  <img src="">
+               </figure>
+            </section>
+
+            <section>
+               <a name="2023"></a>
+               <h2>Time will tell...</h2>
+               <p>It seems my future is developing and I am excited to to begin the next chapter</p>
+               <figure>
+                  <img src="images/developing.jpg">
+               </figure>
+            </section>
+
+         </article>
+
+      </main>
+      <hr>
+
+      <footer>
+         <div id="footer-div">
+            <p id="footer-p">&lt;p&gt; <a href="http://www.philipadilla.com">www.philipadilla.com</a> &lt;/p&gt;</p>
+         </div>
+      </footer>
    </body>
 </html>
