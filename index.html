@@ -5,8 +5,12 @@
       
       <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
       <link rel="stylesheet" type="text/css" href="styles.css">
+
+   </head>
+   <body>
+      
       <script>
-         window.addEventListener("load", function(){
+         // window.addEventListener("load", function(){
          // Get the button:
          let mybutton = document.getElementById("myBtn");
 
@@ -26,14 +30,12 @@
          document.body.scrollTop = 0; // For Safari
          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
          }
-         } 
+         // } 
       </script>
-   </head>
-   <body>
-      
+
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-     <!-- Headers represent a container for introductory content or a set of navigation links -->       
+      <header> <!-- Headers represent a container for introductory content or a set of navigation links -->       
          <h1>Timeline</h1>
                <ul class="nav">
                   <li><a href="#2011">2011</a></li>
@@ -50,28 +52,39 @@
                   <li><a href="#2022">2022</a></li>
                   <li><a href="#2023">2023</a></li>
                </ul>
-         
+         </header>
 
       <main>
-         <h1 id="mainHeading">See me, know me</h1> <!-- specifies the main content of a document -->
-         <article> <!-- Article specifies independent, self-contained content -->
-            <section>
+
+         <section>
+            <h1 id="mainHeading">See me, know me</h1> <!-- specifies the main content of a document -->
+            <p class="centered" id="intro">My photographic journey</p>
+            <hr>
+         </section>
+
+         <article>          <!-- Article specifies independent, self-contained content -->
+
+            <section id="beginning">
                <a name="2011"></a> 
                <h2>In the Beginning</h2>
-               <p>"Follow your heart and you may find your so(u)l."</p>
-               <figure>
+               <div id="div-2011">
+                  <p>"Follow your heart and you may find your so(u)l."</p>
+               </div>
+               <figure class="right">
                   <img src="images/origin.jpg">
                </figure>
             </section>
+            <hr>
 
             <section>
                <a name="2012"></a>
                <h2>The Sun Also Rises</h2>
                <p>"Saved by the Sol Brothers"</p>
-               <figure>
-                  <img src="">
+               <figure class="left bordered">
+                  <img src="https://64.media.tumblr.com/tumblr_ma2ewsqEAT1r1n7d8o1_500.jpg">
                </figure>
             </section>
+            <hr>
 
             <section>
                <a name="2013"></a>
@@ -180,6 +193,8 @@
                   <img src="images/developing.jpg">
                </figure>
             </section>
+
+         </article>
 
       </main>
       <hr>
